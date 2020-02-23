@@ -1,32 +1,19 @@
-import React, {useEffect} from "react";
+import React from "react";
 
-import ScheduleLiveTile from './ScheduleLiveTile';
-export class Content extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-        }
-    }
+import ChannelTile from "./ChannelTile";
 
-    componentDidMount() {
-        fetch('https://rest-api.elisaviihde.fi/rest/epg/schedule/live')
-            .then(res => res.json())
-            .then((data) => {
-            this.setState({ data: data.data })
-            })
-
-    }
-
+export default class Content extends React.Component {
     render() {
-
-
         return (
-            <div>
-                <ScheduleLiveTile />
-            </div>
-        );
-    }
-}
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-12">
 
-export default Content;
+                    </div>
+                </div>
+            </div>
+        )
+       }
+
+
+}
