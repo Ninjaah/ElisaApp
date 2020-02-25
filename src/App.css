@@ -7,19 +7,17 @@
   margin: 0 auto;
   padding: 3px;
   flex-wrap:  wrap;
-background-color: white;
+  background-color: white;
   width: 1270px;
 }
 
 body {
   width: 100%;
   text-align: center;
-  background-color: midnightblue;
+  background-color: #0a2285;
 }
 
-
 .content {
-
 
 }
 
@@ -31,12 +29,20 @@ ul {
   text-align: left;
 }
 
+.navbar {
+  margin:0;
+  color:#0A26B1
+}
+
 .navbar p{
-margin:0;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.navbar h2{
+  margin-bottom: 0;
 }
 
 .channelTile {
-
   border:solid 2px darkblue;
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -47,12 +53,13 @@ margin:0;
 }
 .channelTile p {
   color: black;
-  margin: 0px 0px 0px 40px;
+  margin: 0 0 0 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-
+.ended {
+  color: #a3a3a7;
 }
+
 
 .App-header {
   background-color: #282c34;

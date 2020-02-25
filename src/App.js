@@ -13,8 +13,8 @@ class App extends Component {
         super(props);
         this.state = {
             channels: [],
-            schedule: [],
-            everySchedule: []
+            schedule: [],       //Not used, was supposed to hold one schedule at a time which it gets from the API
+            everySchedule: []   //Not used, was supposed to hold all schedules in an array
         };
     }
       componentDidMount() {
@@ -23,14 +23,13 @@ class App extends Component {
               .then(data => this.setState({ channels: data.channels }));
           console.log(this.state.channels);
 /*
-          fetch(APIsc + channelId )
+          fetch(APIsc + channelId )   // I first thought I could get both channels and schedules in this component but I changed it so that Channeltiles get the schedules themselves
               .then(response => response.json())
               .then(data => this.setState({ schedule: data.schedule }));
 */
-
     }
 /*
-    getAllIds(){
+    getAllIds(){                        // Get the id's of all channels and save to channelIDs
         this.state.channels.map(hit =>
             <li key={hit.toString()}>
                 {channelIDs.push(hit.id)}
@@ -40,7 +39,7 @@ class App extends Component {
         console.log(channelIDs);
     }
 
-    getSchedule(channelID) {
+    getSchedule(channelID) {            // Get the schedule for today for the channelID given
         console.log("trying to get schedule for "+channelID);
         fetch(APIsc + channelID )
             .then(response => response.json())
@@ -62,7 +61,7 @@ class App extends Component {
  //   this.getAllIds();
    // this.getSchedule(37);
 
-        return (
+        return (            //Make a channeltile for each channel, get the logo, send its id as props
             <div>
             <Navbar/>
             <ul>
