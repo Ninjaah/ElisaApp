@@ -1,14 +1,14 @@
 import './App.css';
 
 
-import React, { Component } from 'react';
+import React from 'react';
 import ChannelTile from "./components/ChannelTile";
 import Navbar from "./components/Navbar";
 const API = 'https://rest-api.elisaviihde.fi/rest/epg/channels';
-const APIsc = 'https://rest-api.elisaviihde.fi/rest/epg/schedule?channelId=';
+const APIsc = 'https://rest-api.elisaviihde.fi/rest/epg/schedule?channelId=';   //Not used as the function was moved to ChannelTile.js
 let channelIDs = [37, 38, 39, 40, 41, 42, 44, 47, 169, 183, 181, 6, 251, 256, 258, 295, 331, 26, 15, 259, 260, 263, 264, 296, 297, 298, 299];
 
-class App extends Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

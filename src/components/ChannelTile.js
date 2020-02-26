@@ -1,8 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 
 
 const API = 'https://rest-api.elisaviihde.fi/rest/epg/schedule?channelId=';
-let channelId;
 class ChannelTile extends React.Component {
     constructor(props) {
         super(props);
