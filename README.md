@@ -1,4 +1,4 @@
-This project was made with no prior experience in React, so I was not able to get all the features I wanted due to time constraints. I had to use time for basics and extra troubleshooting due to lack of experience, so I did not have time to make a nice design either. I will probably continue to work on this project when I want to continue learning React.
+This project was made with no prior experience in React, so I was not able to get all the features I wanted due to time constraints. I had to use time for basics and extra troubleshooting due to lack of experience, so I did not have time to make a nice design either. I will probably continue to work on this project when I want to continue learning React. Site hosted on https://elisa-app.surge.sh/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
