@@ -68,7 +68,7 @@ class App extends Component {
                 {channels.map(hit =>
                     <div className="channelTile" key={hit.toString()}>
                         <p><img src={hit.logos[5].url} alt={hit.name} /> </p>
-                        <ChannelTile  channelId={hit.id}/>
+                        <div className="scroller"><ChannelTile  channelId={hit.id}/></div>
                     </div>
                 )}
             </ul>
